@@ -1,6 +1,6 @@
 package br.ufjf.dcc193.ana.quest;
 
-public class Cavaleiro {
+public class Cavaleiro implements Heroi {
 
     public Cavaleiro() {
         System.out.println("Um novo cavaleiro chega ao rei...");

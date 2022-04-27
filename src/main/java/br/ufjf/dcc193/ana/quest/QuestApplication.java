@@ -15,7 +15,7 @@ public class QuestApplication {
 
 		Cavaleiro c1 = new Cavaleiro();
 		Missao m1 = new Missao();
-		m1.setCavaleiro( c1 );
+		m1.setHeroi( c1 );
 		m1.iniciar();
 		m1.concluir(); 
 	}

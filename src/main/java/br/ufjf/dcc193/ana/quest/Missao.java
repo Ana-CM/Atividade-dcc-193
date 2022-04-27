@@ -4,11 +4,11 @@ import org.springframework.boot.autoconfigure.solr.SolrProperties;
 
 public class Missao {
 
-    private Cavaleiro cavaleiro;
+    private Heroi heroi;
 
-    public Missao( Cavaleiro cavaleiro ) {
+    public Missao( Heroi heroi) {
         System.out.println( "O rei criou uma nova missão" );
-        setCavaleiro(cavaleiro);
+        setHeroi(heroi);
     }
 
     public Missao(){
@@ -20,16 +20,16 @@ public class Missao {
     }
 
     public void concluir() {
-        this.cavaleiro.agir();
+        this.heroi.agir();
         System.out.println( "A missão checgou ao fim" );
     }
 
-    public Cavaleiro getCavaleiro() {
-        return cavaleiro;
+    public Heroi getHeroi() {
+        return heroi;
     }
 
-    public void setCavaleiro(Cavaleiro cavaleiro) {
-        this.cavaleiro = cavaleiro;
+    public void setHeroi(Heroi Heroi) {
+        this.heroi = Heroi;
     }
 
     
