@@ -1,5 +1,8 @@
 package br.ufjf.dcc193.ana.quest;
 
+import org.springframework.stereotype.Component;
+
+@Component("clerigo")
 public class Clerigo implements Heroi {
 
     public Clerigo() {

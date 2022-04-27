@@ -2,7 +2,7 @@ package br.ufjf.dcc193.ana.quest;
 
 import org.springframework.stereotype.Component;
 
-@Component 
+@Component("cavaleiro")
 public class Cavaleiro implements Heroi {
 
     public Cavaleiro() {
