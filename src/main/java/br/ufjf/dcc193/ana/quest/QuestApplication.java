@@ -13,7 +13,7 @@ public class QuestApplication {
 		SpringApplication.run(QuestApplication.class, args);
 		System.out.println("Hora da Aventura");
 
-		Cavaleiro c1 = new Cavaleiro();
+		Heroi c1 = Guilda.criaHeroi();
 		Missao m1 = new Missao();
 		m1.setHeroi( c1 );
 		m1.iniciar();
