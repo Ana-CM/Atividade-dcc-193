@@ -6,9 +6,13 @@ public class Missao {
 
     private Cavaleiro cavaleiro;
 
-    public Missao() {
+    public Missao( Cavaleiro cavaleiro ) {
         System.out.println( "O rei criou uma nova missão" );
-        this.cavaleiro = new Cavaleiro();
+        setCavaleiro(cavaleiro);
+    }
+
+    public Missao(){
+        this(null);
     }
 
     public void iniciar() {
@@ -16,7 +20,17 @@ public class Missao {
     }
 
     public void concluir() {
-        cavaleiro.agir();
+        this.cavaleiro.agir();
         System.out.println( "A missão checgou ao fim" );
     }
+
+    public Cavaleiro getCavaleiro() {
+        return cavaleiro;
+    }
+
+    public void setCavaleiro(Cavaleiro cavaleiro) {
+        this.cavaleiro = cavaleiro;
+    }
+
+    
 }
