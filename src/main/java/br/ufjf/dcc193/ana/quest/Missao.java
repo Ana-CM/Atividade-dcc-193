@@ -1,9 +1,15 @@
 package br.ufjf.dcc193.ana.quest;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.solr.SolrProperties;
+import org.springframework.cache.annotation.CacheConfig;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
+@Component
 public class Missao {
 
+    @Autowired
     private Heroi heroi;
 
     public Missao( Heroi heroi) {
